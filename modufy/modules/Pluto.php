@@ -2,8 +2,8 @@
 
 class Pluto {
 
-	public function _construct() {
-
+	public function __construct() {
+		echo "Making planet Pluto." . PHP_EOL;
 	}
 
  

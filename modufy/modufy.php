@@ -9,24 +9,37 @@ This makes fantastic things happen.
 
 Steve Knoblock 7/25/2015
 
+T_USE is a PHP token :(
+
 */
 
-// Test module
-$moduleName = 'Pluto';
+define('PHP_EXT', '.php');	
 
 
-define('PHP_EXT', '.php');
+class Modufy {
 
-$pathParts = [ 'modules', $moduleName . PHP_EXT ];
+	public function useme($moduleName) {
+		global ${$moduleName}; // automatically inject into global namespace
 
-$path = join(DIRECTORY_SEPARATOR, $pathParts);
+		$pathParts = [ 'modules', $moduleName . PHP_EXT ];
 
-// load module
+		$path = join(DIRECTORY_SEPARATOR, $pathParts);
 
-require_once $path;
- 
-// instantiate module from class
-${$moduleName} = new $moduleName;
+		// load module
+
+		require_once $path;
+		 
+		// instantiate module from class
+		${$moduleName} = new $moduleName;
+	}
+
+}
+
+
+// fake autoload
+$m = new Modufy();
+// fake use statement
+$m->useme('Pluto');
 
 
 // demo
