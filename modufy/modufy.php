@@ -4,9 +4,10 @@
 
 oomocha
 Python style module loader.
-Steve Knoblock 7/25/2015
 
-$path = join(DIRECTORY_SEPARATOR, $pathParts)
+This makes fantastic things happen.
+
+Steve Knoblock 7/25/2015
 
 */
 
