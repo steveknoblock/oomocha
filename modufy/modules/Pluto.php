@@ -8,7 +8,7 @@ class Pluto {
 
  
 	public function hello() {
-		echo "Hello! I'm a small planet!";
+		echo "Hello! I'm a small planet!" . PHP_EOL;
 	}
 
 }

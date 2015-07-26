@@ -10,18 +10,23 @@ $path = join(DIRECTORY_SEPARATOR, $pathParts)
 
 */
 
+// Test module
+$moduleName = 'Pluto';
+
+
 define('PHP_EXT', '.php');
 
-$moduleName = 'Pluto';
+$pathParts = [ 'modules', $moduleName . PHP_EXT ];
+
+$path = join(DIRECTORY_SEPARATOR, $pathParts);
 
 // load module
 
-require_once 'modules/' . $moduleName . PHP_EXT;
+require_once $path;
  
 // instantiate module from class
-$moduleName = new $moduleName;
+${$moduleName} = new $moduleName;
 
-var_dump($moduleName);
 
 // demo
 $Pluto->hello();
