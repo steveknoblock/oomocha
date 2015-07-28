@@ -12,7 +12,14 @@ how the idea of modularity can go beyond the idea of merely
 including code. Modufy is intended explore not just including
 code, but making it ready to use in a modular and object-oriented way.
 
+Python allows the programmer to essentially say this in PHP:
 
+$m->use_('Pluto');
+$Pluto->setType('Planet');
+$Pluto->hello();
+
+
+The word use is reserved in PHP, so I can't use use it as a function name.
 T_USE is a PHP token :( At least use_() is distinctive. :)
 
 */
@@ -32,6 +39,12 @@ class Modufy {
 		// load module
 		require_once $path;
 		 
+		 /*
+		 	This is a tricky bit of code. It creates a new
+		 	instance of a module object from the code loaded
+		 	by the include (require).
+		 */
+
 		// instantiate module from class
 		${$moduleName} = new $moduleName;
 	}
