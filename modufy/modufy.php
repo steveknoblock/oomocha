@@ -2,12 +2,16 @@
 
 /*
 
-oomocha
-Python style module loader.
-
+A software Oomocha.
 This makes fantastic things happen.
-
 Steve Knoblock 7/25/2015
+
+This is a simple experiment designed to learn how the Python
+module system works. It covers just the basics of understanding
+how the idea of modularity can go beyond the idea of merely
+including code. Modufy is intended explore not just including
+code, but making it ready to use in a modular and object-oriented way.
+
 
 T_USE is a PHP token :( At least use_() is distinctive. :)
 

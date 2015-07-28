@@ -14,3 +14,7 @@ Importing a module does not just include code, but stands it up as an instantiat
 ready for the programmer to use.
 
 
+This is a very simplified model of the way the Python module loader works, it focouses
+on the idea of advacning from mere inclusion of code to the idea of a module being
+code included and instantiated ready to run.
+
