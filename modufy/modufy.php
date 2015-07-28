@@ -34,9 +34,14 @@ class Modufy {
 
 		$pathParts = [ 'modules', $moduleName . PHP_EXT ];
 
+		/*
+			Use join() to build a path.
+		*/
 		$path = join(DIRECTORY_SEPARATOR, $pathParts);
 
-		// load module
+		/*
+			Load the code for this module.
+		*/
 		require_once $path;
 		 
 		 /*
@@ -45,7 +50,6 @@ class Modufy {
 		 	by the include (require).
 		 */
 
-		// instantiate module from class
 		${$moduleName} = new $moduleName;
 	}
 
