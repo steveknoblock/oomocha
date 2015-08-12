@@ -82,11 +82,11 @@ var_dump( $dd->xml2array($a) );
 
 array(25) {
   'id' => "60"
-  'company' => "Hammer Restoration"
+  'company' => "Auto Restoration"
   'first_name' => "Roxanne"
-  'last_name' => "Moreno"
-  'email' => "rmoreno@hammerrestoration.com"
-  'phone' => "989-773-3473"
+  'last_name' => "M"
+  'email' => "rm@example.com"
+  'phone' => "989-555-5555"
   'date_created' => "Mon, 08 Apr 2013 14:48:56 +0000"
   'date_modified' => "Mon, 08 Apr 2013 14:48:56 +0000"
   'store_credit' => "0.0000"
@@ -97,17 +97,17 @@ array(25) {
   'addresses.first_name' =>
   string(7) "Roxanne"
   'addresses.last_name' =>
-  string(6) "Moreno"
+  string(6) "M"
   'addresses.company' =>
-  string(18) "Hammer Restoration"
+  string(18) "Auto Restoration"
   'addresses.street_1' =>
-  string(26) "1733 Industrial Park Drive"
+  string(26) "1776 Wheel Park Drive"
   'addresses.street_2' =>
   string(0) ""
   'addresses.city' =>
   string(12) "Mt. Pleasant"
   'addresses.state' =>
-  string(8) "Michigan"
+  string(8) "PA"
   'addresses.zip' =>
   string(5) "48858"
   'addresses.country' =>
