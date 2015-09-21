@@ -3,6 +3,8 @@
 /*
  * Animal Speaks
  * A typical example of polymorphism.
+ * Steve Knoblock 2015
+ * https://github.com/steveknoblock/oomocha
  */
 
 
