@@ -14,14 +14,14 @@
 
  class Animal implements InterfaceAnimal {
 
- 	public function speak() { return false }
+ 	public function speak() { return false; }
  }
 
 
  class Cat extends Animal {
 
  	function speak() {
-		return "Meow!"
+		return "Meow!";
 	}
  }
 
@@ -29,7 +29,7 @@
  class Dog extends Animal {
 
  	function speak() {
-		return "Woof!"
+		return "Woof!";
 	}
  }
 
