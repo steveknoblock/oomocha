@@ -35,5 +35,5 @@
 
 
 $dog = new Dog;
-$dog->speak();
+echo $dog->speak();
 
